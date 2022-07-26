@@ -1,0 +1,173 @@
+body {
+  background-image: url('https://st.depositphotos.com/2885805/3801/v/600/depositphotos_38015509-stock-illustration-seamless-sweet-pastries.jpg');
+	
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	align-items: center;
+}
+
+header{
+  width: 100%;
+  
+  background: rgba(122, 155, 224, 0.894);
+}
+
+#btn-menuen{
+  display:none;
+}
+header label{
+  display: none;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-right: 1px solid #fff ;
+}
+header label:hover{
+  display: pointer;
+  background: rgba(122, 155, 224, 0.894);
+}
+.menuen ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+ 
+  
+ 
+  
+  
+}
+.menuen li {
+  border-right: 1px solid #fff;    
+}
+.menuen li:hover{
+  background: rgba(0,0,0,0.3);
+  
+}
+.menuen li a{
+  display: block;
+  padding: 35px 40px; 
+  color: #fff;
+  text-decoration: none;
+}
+@media(max-width:768px){
+  header label{
+    display: block;
+  }
+  header{
+    height: 50%;
+    background: rgba(122, 155, 224, 0.894);
+  }
+  .menuen{
+    position: absolute;
+    background: rgba(122, 155, 224, 0.894);
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menuen ul {
+    flex-direction: column;
+  }
+  .menuen li{
+    border-top:1px solid #fff;
+    
+  }
+  #btn-menuen:checked ~ .menuen{
+    margin: 0;
+
+  }
+}
+
+
+/*barra*/
+.four.columns                   { width: 30.6666666667%; }
+.barra{
+  
+  padding: 20px 0;
+  background-color: #000000;
+ 
+ 
+
+}
+p{
+  color:rgb(254, 250, 250);
+  
+  
+}
+.barra p{
+  margin: 0;
+  color:white;
+ 
+}
+.icono{
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+@media(min-width: 750px){
+  .icono{
+      margin-bottom: 0;
+  }
+}
+.container {
+  
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+  .row{
+    font-family: Lucida Calligraphy;
+    background-repeat: no-repeat;
+    color: #fff;
+
+  
+  }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+  }
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1; }
+  
+  
+  /* Clearing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  /* Self Clearing Goodness */
+  .container:after,
+  .row:after,
+  .u-cf {
+    content: "";
+    display: table;
+    clear: both; }

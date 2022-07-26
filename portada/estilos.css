@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url(pie-de-pagina.css);
+@import url(portada.css);
+body {
+    background-image: url('https://st.depositphotos.com/2885805/3801/v/600/depositphotos_38015509-stock-illustration-seamless-sweet-pastries.jpg');
+      
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      align-items: center;
+  }
+  
+  header{
+    width: 100%;
+    
+    background: rgba(122, 155, 224, 0.894);
+  }
+  
+  #btn-menuen{
+    display:none;
+  }
+  header label{
+    display: none;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-right: 1px solid #fff ;
+  }
+  header label:hover{
+    display: pointer;
+    background: rgba(122, 155, 224, 0.894);
+  }
+  .menuen ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+   
+    
+   
+    
+    
+  }
+  .menuen li {
+    border-right: 1px solid #fff;    
+  }
+  .menuen li:hover{
+    background: rgba(0,0,0,0.3);
+    
+  }
+  .menuen li a{
+    display: block;
+    padding: 35px 40px; 
+    color: #fff;
+    text-decoration: none;
+  }
+  @media(max-width:768px){
+    header label{
+      display: block;
+    }
+    header{
+      height: 50%;
+      background: rgba(122, 155, 224, 0.894);
+    }
+    .menuen{
+      position: absolute;
+      background: rgba(122, 155, 224, 0.894);
+      width: 70%;
+      margin-left: -70%;
+      transition: all 0.5s;
+    }
+    .menuen ul {
+      flex-direction: column;
+    }
+    .menuen li{
+      border-top:1px solid #fff;
+      
+    }
+    #btn-menuen:checked ~ .menuen{
+      margin: 0;
+  
+    }
+  }
+  

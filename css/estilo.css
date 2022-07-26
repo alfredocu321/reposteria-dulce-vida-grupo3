@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-image: url('https://st.depositphotos.com/2885805/3801/v/600/depositphotos_38015509-stock-illustration-seamless-sweet-pastries.jpg');
+    font-family: sans-serif;
+  }
+
+  header{
+    width: 100%;
+    background: rgb(132, 33, 124);
+  }
+  #btn-menuen{
+    display: none;
+  }
+  header label{
+    display: none;
+    width: 100px;
+    height: 150px;
+    padding: 10px;
+    border-right: 1px solid #fff ;
+  }
+  header label:hover{
+    display: pointer;
+    background: rgb(16, 128, 12);
+  }
+  .menuen ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .menuen li {
+    border-right: 1px solid #fff;    
+  }
+  .menuen li:hover{
+    background: rgba(0,0,0,0.3);
+    
+  }
+  .menuen li a{
+    display: block;
+    padding: 15px 20px; 
+    color: #fff;
+    text-decoration: none;
+  }
+  @media(max-width:768px){
+    header label{
+      display: block;
+    }
+    .menuen{
+      position: absolute;
+      background: orange;
+      width: 70%;
+      margin-left: -70%;
+      transition: all 0.5s;
+    }
+    .menuen ul {
+      flex-direction: column;
+    }
+    .menuen li{
+      border-top:1px solid #fff;
+    }
+    #btn-menuen:checked ~ .menuen{
+      margin: 0;
+
+    }
+  }
